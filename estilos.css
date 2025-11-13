@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para o corpo da página  */
+}
+.menu-principal ul{        /* Quero editar o Ul do html */
+    list-style: none;        /* Retirar as bolinhas da lista não ordenada */
+    margin: 0;                 /* Retirar a margem (espaço entre a losta e a margem da folha)*/
+    padding: 0;                 /* Remover o espaço entre uma palavra e outra/ deixar tudo menor (na diagonal)*/
+    display: flex;               /* facilita o posicionamento do selements  */
+    justify-content: center;      /* Centraliza os itens orizonalmente */
+    background-color: #523116;      /* Cor de fundo do Menu */
+}
+.menu-principal a {
+    text-decoration: none;          /*Remove a linha que grifa cada palavra da ul*/
+    color: rgb(230, 220, 220);    /*   sss   */
+    display: block;                 /* Deixa o link (somente do "a" da ul) ocupar todo o espaço do seu container */   
+    padding: 20px 25px;             /* Espassamente entre inicio, sobre */
+    font-weight: bold;              /* Traduzido: Peso/ "transparência" do negrito, Para deixar em negrito */
+    text-transform: uppercase;       /*  ss   */
+    font-size: 14px;       /* hhh */  
+
+}
+.menu-principal a:hover {
+    background-color: #85582f ;   /*Cor de fundo quando você passa o mouse em cima das opções, ele vai mudar a cor */
+    color: white; 
+
+} 
+
+.hero{
+    min-height: 90vh; /* = 90% da altura da tela. Isso faz com que o hero quase preencha a tela */
+    background-image: url(img/bg.jpg); 
+    background-repeat: no-repeat; /* Para a imagem não se repetir */ 
+    background-size: cover;  /* Faz a imagem cobrir todo o espaço */
+    background-position: center;  /* Matém o centro da imagem sempre visível */ 
+    display: flex;
+    justify-content: center;     /* O "trio" para centralização perfeita */ 
+    align-items:center; /* Centraliza o "filho" no eixo Vertical */ 
+    color: white;     /* Define a cor do texto padrão para branco */ 
+}
+
+.hero-content {
+    text-align: center; /* Centraliza o texto DENTRO da caixa */
+    max-width: 600px;  /* Impede que o texto fique largo demais em telas grandes */
+
+     /* Efeito "Overlay": Fundo preto com 50% de transparência.
+       rgba(0, 0, 0, 0.5) = (Red, Green, Blue, Alpha/Opacidade)
+       Isso garante que o texto seja legível em cima de qualquer imagem. */
+
+    background-color: rgba(92, 57, 22, 0.925); 
+    padding: 40px;
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+.hero-content h1 {   /* Estilo do Título Principal */
+    font-size: 30px;  /* Tamanho da fonte, nesse caso o H1(Título Principal) */
+    margin-top: 0;   /* sss */ 
+    margin-bottom: 15px; /* sss */ 
+}
+
+
+.hero-content p {   /* Estilo do Subtítulo */
+    font-size: 20px; /* tamanho da fonte */ 
+    margin-bottom: 50px;  /* Margem entre o subtítulo e o "Saiba Mais" */ 
+}
+
+
+.hero-button {    /* Estilo do Botão de Ação */
+    display: inline-block;
+    background-color: #d4dfe2; /* cor de fundo do hover do menu ou "Saiba Mais"*/
+    color: rgba(90, 50, 12, 0.795); /* Cor das letras do "Saiba Mais" */ 
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;  /* Efeito de transição suave */
+} 
+
+.hero-button:hover {
+    background-color: #9e8569;  /* Cor quando passa o mouse em cima do "Saiba Mais" */ 
+}
+
+.features-container {  /* Estilos da seção features */ 
+    display: flex; 
+    gap: 20px;  /* Espaçamento entre os itens */ 
+    padding: 60px 40px; 
+    background-color: rgba(117, 85, 46, 0.966); /* Cor atrás das caixas */ 
+}
+
+.feature-card {  /* diz ao item ocupe 1 parte igual ao espaço disponível */ 
+    flex: 1;
+    background-color: #5a4220; /* Cor de fundo das "Caixas de informações" */ 
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(87, 68, 31, 0.5) ; /* Sombreado das caixas */ 
+    text-align: center;
+}
+
+.feature-card:hover {
+    box-shadow: 0 6px 15px rgba(117, 89, 66, 0.795);
+    transform: translate(-5px); 
+} 
+  /* GetEmoji- "copiar e colar"
+
+
